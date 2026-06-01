@@ -1,0 +1,73 @@
+/* Configuração Geral do Corpo da Página */
+body {
+    background-color: #0a0a12; /* Fundo azul escuro quase preto */
+    color: #00ffcc; /* Texto ciano neon para parecer tela de terminal */
+    font-family: 'Fira Code', monospace; /* Fonte estilo código (definida no HTML) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container Principal do Jogo */
+main {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #121225;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); /* Efeito de brilho neon */
+}
+
+/* Estilização das Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #ff0055; /* Borda rosa neon nas imagens */
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+}
+
+/* Parágrafos / Textos da História */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e0e0ff; /* Texto liso ligeiramente azulado para leitura confortável */
+}
+
+/* Botões de Escolha */
+button {
+    background-color: transparent;
+    color: #ff0055; /* Texto rosa neon */
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    border: 2px solid #ff0055;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Efeito Hover nos Botões */
+button:hover {
+    background-color: #ff0055;
+    color: #0a0a12; /* Inverte as cores */
+    box-shadow: 0 0 15px #ff0055; /* Brilho intenso ao passar o mouse */
+}
+
+/* Mecânica de Alternar Telas (idêntica ao seu original) */
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
